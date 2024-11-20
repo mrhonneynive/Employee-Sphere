@@ -1,0 +1,30 @@
+﻿Employee, Worker, Manager, EmployeeSystem and Department are classes
+
+*****A*****
+1)Employee class is the super class of Worker, Manager and EmployeeSystem classes
+Employee class is an abstract class which means it can not be instantiated
+
+1,2) All employees (including Managers) have a name, a surname, a hire date, a salary,
+a performance score and a Department
+All departments have an id, a name, a location and a Manager
+
+3) We can implement the following methods for the EmployeeSystem class from an Interface:
+- calculatePerformanceScore(): This method calculates the performance score of the employee
+- fireEmployee(): This method fires the employee
+- promoteEmployee(): This method promotes the employee to a manager
+- calculateSalary(): This method calculates the salary of the employee
+- hireEmployee(): This method hires the employee (recruiting new employees)
+
+4)
+-We can use a Map<Integer, Employee> to store the employees in the EmployeeSystem class where the key
+is the employee id and the value is the employee object, and a Map<Integer, Department> to store the departments
+where the key is the department id and the value is the department object,
+therefore we can easily access the employees and departments
+-Add method will be hireEmployee() and delete method will be fireEmployee()
+-Search method will get the employee name and return the employee id and
+get the department name and return the department id so that we can easily
+access the employees and departments from Map
+-Method related with calculation is calculatePerformanceScore() and calculateSalary()
+-And there will be also an update method which will be promoteEmployee()
+
+That is all for now, I am waiting for your feedback. Thank you for your time and consideration.
