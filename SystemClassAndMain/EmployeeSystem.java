@@ -1,5 +1,7 @@
-﻿import java.lang.reflect.Array;
+package SystemClassAndMain;
+
 import java.util.*;
+import Inheritance.*;
 
 public class EmployeeSystem {
     private static final int MAX_EMPLOYEES = 100;

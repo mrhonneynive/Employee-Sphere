@@ -1,4 +1,4 @@
-import java.awt.EventQueue;
+package GUI;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -9,32 +9,12 @@ import javax.swing.JTextArea;
 import javax.swing.JButton;
 import java.awt.Font;
 
-public class Delete extends JFrame {
+public class DeleteFrame extends JFrame {
 
-	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField idTextField;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Delete frame = new Delete();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
-	 * Create the frame.
-	 */
-	public Delete() {
+	public DeleteFrame() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 550, 400);
 		contentPane = new JPanel();

@@ -1,4 +1,6 @@
-﻿// - [ ] add employee panel should have checkboxes
+package Inheritance;
+
+// - [ ] add employee panel should have checkboxes
 public class Manager extends Employee {
     public Manager(int id, String name, String surname, double salary, int departmentId) {
         super(id, name, surname, salary, departmentId);
@@ -22,7 +24,7 @@ public class Manager extends Employee {
 
     @Override
     public String toString() {
-        return "Manager{" +
+        return "Inheritance.Manager{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +

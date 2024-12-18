@@ -1,10 +1,12 @@
-﻿import java.lang.Math;
+package Inheritance;
+
+import java.lang.Math;
 
     public class Worker extends Employee implements Comparable<Worker> {
     private int tasks;
     private int doneTasks;
 
-    Worker (int id, String name, String surname, double salary, int departmentId, int tasks) {
+    public Worker (int id, String name, String surname, double salary, int departmentId, int tasks) {
         super(id, name, surname, salary, departmentId);
         this.tasks = tasks;
         setDoneTasks(tasks);
@@ -49,7 +51,7 @@
 
     @Override
     public String toString() {
-        return "Worker{" +
+        return "Inheritance.Worker{" +
                 "tasks=" + tasks +
                 ", doneTasks=" + doneTasks +
                 ", id=" + id +

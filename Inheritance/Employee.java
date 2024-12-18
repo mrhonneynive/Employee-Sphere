@@ -1,4 +1,6 @@
-﻿import java.lang.Math;
+package Inheritance;
+
+import Interfaces.EmployeeActions;
 public abstract class Employee implements EmployeeActions {
 
     protected int id;
@@ -7,7 +9,7 @@ public abstract class Employee implements EmployeeActions {
     protected double salary;
     protected double performanceScore;
     protected int departmentId;
-    protected static int totalEmployees = 0;
+    public static int totalEmployees = 0;
 
     public Employee(int id, String name, String surname, double salary, int departmentId) {
         this.id = id;
@@ -74,7 +76,7 @@ public abstract class Employee implements EmployeeActions {
     }
     @Override
     public String toString() {
-        return "Employee{" +
+        return "Inheritance.Employee{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +

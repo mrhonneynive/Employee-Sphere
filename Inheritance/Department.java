@@ -1,4 +1,6 @@
-﻿import java.util.Set;
+package Inheritance;
+
+import java.util.Set;
 import java.util.TreeSet;
 
 public class Department {
@@ -61,7 +63,7 @@ public class Department {
 
     @Override
     public String toString() {
-        return "Department{" +
+        return "Inheritance.Department{" +
                 "name='" + name + '\'' +
                 '}';
     }

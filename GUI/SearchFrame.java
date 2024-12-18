@@ -1,4 +1,4 @@
-import java.awt.EventQueue;
+package GUI;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -9,32 +9,12 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.Font;
 
-public class Search extends JFrame {
-
-	private static final long serialVersionUID = 1L;
+public class SearchFrame extends JFrame {
 	private JPanel contentPane;
 	private JTextField textField;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Search frame = new Search();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
 
-	/**
-	 * Create the frame.
-	 */
-	public Search() {
+	public SearchFrame() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 550, 400);
 		contentPane = new JPanel();
